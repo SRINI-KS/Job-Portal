@@ -1,0 +1,209 @@
+<section class="relative bg-white  lg:py-24 py-16 mx-auto">
+    <div class="container">
+        <div class="lg:flex justify-center">
+            <div class="lg:w-2/3">
+                <div class="p-6 bg-white  shadow dark:shadow-gray-700 rounded-md">
+                    <form class="text-left">
+                        <div class="grid grid-cols-1 border-b-4 py-5">
+                            <h5 class="text-xl font-extrabold text-center"> Post Job</h5>
+
+                        </div>
+
+                        <div class="grid grid-cols-12 gap-4 mt-4">
+                            <div class="col-span-12 ltr:text-left rtl:text-right">
+                                <label class="font-semibold" for="RegisterName">Job Title:</label>
+                                <input id="RegisterName" type="text" class="form-input border border-slate-100  mt-5  "
+                                    placeholder="Web Developer">
+                            </div>
+
+                            <div class="col-span-12 ltr:text-left rtl:text-right">
+                                <label for="comments" class="font-semibold">Job Description:</label>
+                                <textarea name="comments" id="comments"
+                                    class="form-input border border-slate-100  mt-1 textarea"
+                                    placeholder="Write Job Description :"></textarea>
+                            </div>
+
+                            <div class="md:col-span-6 col-span-12 ltr:text-left rtl:text-right">
+                                <label class="font-semibold">Job Categories:</label>
+                                <select class="form-select form-input border border-slate-100  block w-full mt-1">
+                                    <option value="WD">Web Designer</option>
+                                    <option value="WD">Web Developer</option>
+                                    <option value="UI">UI / UX Desinger</option>
+                                </select>
+                            </div>
+
+                            <div class="md:col-span-6 col-span-12 ltr:text-left rtl:text-right">
+                                <label class="font-semibold">Job Type:</label>
+                                <select class="form-select form-input border border-slate-100  block w-full mt-1">
+                                    <option value="FT">Full Time</option>
+                                    <option value="PT">Part Time</option>
+                                    <option value="WFH">Work From Home</option>
+                                    <option value="RJ">Remote Job</option>
+                                </select>
+                            </div>
+
+                            <div class="md:col-span-6 col-span-12 ltr:text-left rtl:text-right">
+                                <label class="font-semibold">Salary:</label>
+                                <select class="form-select form-input border border-slate-100  block w-full mt-1">
+                                    <option value="Yearly">Yearly</option>
+                                    <option value="MONTH">Monthly</option>
+                                </select>
+                            </div>
+
+                            <div class="md:col-span-3 col-span-12 ltr:text-left rtl:text-right">
+                                <label class="font-semibold md:invisible md:block hidden">Min:</label>
+                                <div class="relative mt-1">
+                                    <span
+                                        class="w-10 h-12 bg-slate-50  border border-slate-100  absolute top-0 start-0 overflow-hidden rounded">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="4"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-dollar-sign w-4 h-4 absolute top-3 start-3">
+                                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                                        </svg>
+                                    </span>
+                                    <input type="number" class="form-input border border-slate-100  ps-12"
+                                        placeholder="min" name="minsalary">
+                                </div>
+                            </div>
+
+                            <div class="md:col-span-3 col-span-12 ltr:text-left rtl:text-right">
+                                <label class="font-semibold md:invisible md:block hidden">Max:</label>
+                                <div class="relative mt-1 mx-auto   ">
+                                    <span
+                                        class="w-10 h-12 bg-slate-50  border border-slate-100  absolute top-0 start-0 overflow rounded">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-dollar-sign w-4 h-4 absolute top-3 start-3">
+                                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                                        </svg>
+                                    </span>
+                                    <input type="number" class="form-input border border-slate-100  ps-12"
+                                        placeholder="max" name="maxsalary">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 mt-8 border-t-4 py-5">
+                            <h5 class="text-lg font-semibold text-center">Skill &amp; Experience:</h5>
+                        </div>
+
+                        <div class="grid grid-cols-12 gap-4 mt-4">
+                            <div class="col-span-12 ltr:text-left rtl:text-right">
+                                <label class="font-semibold" for="Skillname">Skills:</label>
+                                <input id="Skillname" type="text" class="form-input border border-slate-100  mt-1"
+                                    placeholder="Web Developer">
+                            </div>
+
+                            <div class="md:col-span-6 col-span-12 ltr:text-left rtl:text-right">
+                                <label class="font-semibold" for="Qualificationname">Qualifications:</label>
+                                <input id="Qualificationname" type="text"
+                                    class="form-input border border-slate-100  mt-1" placeholder="Qualifications">
+                            </div>
+
+                            <div class="md:col-span-6 col-span-12 ltr:text-left rtl:text-right">
+                                <label class="font-semibold" for="Experiencename">Experience:</label>
+                                <input id="Experiencename" type="text" class="form-input border border-slate-100  mt-1"
+                                    placeholder="Experience">
+                            </div>
+
+                        </div>
+
+                        <div class="grid grid-cols-1 mt-8 py-5 border-t-4">
+                            <h5 class="text-lg font-semibold text-center">Company Details:</h5>
+                        </div>
+
+                        <div class="grid grid-cols-12 gap-4 mt-4">
+                            <div class="col-span-6 ltr:text-left rtl:text-right">
+                                <label class="font-semibold" for="Address">Company Name</label>
+                                <input id="company name" type="text" class="form-input border border-slate-100  mt-1"
+                                    placeholder="Company Name">
+                            </div>
+                            <div class="col-span-6 ltr:text-left rtl:text-right">
+                                <label class="font-semibold" for="Address">Company Contact Person</label>
+                                <input id="Name" type="text" class="form-input border border-slate-100  mt-1"
+                                    placeholder="Name">
+                            </div>
+
+                            <div class="col-span-6 ltr:text-left rtl:text-right">
+                                <div>
+                                    <label class="font-semibold">Email Address</label>
+                                    <div class="relative">
+                                        <input type="text" id="hs-leading-icon" name="hs-leading-icon"
+                                            class="py-3 px-4 pl-11 block w-full border-gray-200 shadow-sm rounded-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 "
+                                            placeholder="you@site.com">
+                                        <div
+                                            class="absolute inset-y-0 left-0 flex items-center pointer-events-none z-20 pl-4">
+                                            <svg class="h-4 w-4 text-gray-400" xmlns="http://www.w3.org/2000/svg"
+                                                width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-span-6 ltr:text-left rtl:text-right">
+
+
+                                <div>
+                                    <label for="hs-inline-leading-select-label"
+                                        class="block text-sm font-medium mb-2 dark:text-white">Phone number</label>
+                                    <div class="relative">
+                                        <input type="number" id="hs-inline-leading-select-label" name="inline-add-on"
+                                            class="py-3 px-4 pl-20 block w-full border-gray-200 shadow-sm rounded-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 "
+                                            placeholder=" (000) 000-0000">
+                                        <div class="absolute inset-y-0 left-0 flex items-center text-gray-500 pl-px">
+                                            <label for="hs-inline-leading-select-country"
+                                                class="sr-only">Country</label>
+                                            91 +
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-span-12 ltr:text-left rtl:text-right">
+                                <label class="font-semibold" for="Address">Address:</label>
+                                <input id="Address" type="text" class="form-input border border-slate-100  mt-1"
+                                    placeholder="Address">
+                            </div>
+
+                            <div class="md:col-span-4 col-span-12 ltr:text-left rtl:text-right">
+                                <label class="font-semibold">Country:</label>
+                                <input id="Name" type="text" class="form-input border border-slate-100 mt-1"
+                                placeholder="Country">
+                            </div>
+
+                            <div class="md:col-span-4 col-span-12 ltr:text-left rtl:text-right">
+                                <label class="font-semibold">State:</label>
+                               <input id="Name" type="text" class="form-input border border-slate-100 mt-1"
+                                placeholder="State">
+                            </div>
+                            <div class="md:col-span-4 col-span-12 ltr:text-left rtl:text-right">
+                                <label class="font-semibold">PinCode:</label>
+                               <input id="Pincode" type="number" class="form-input border border-slate-100 mt-1"
+                                placeholder="Pincode">
+                            </div>
+
+
+                        </div>
+
+                        <div class="grid grid-cols-1 gap-4 mt-4 justify-center">
+                            <div class="">
+                                <button type="submit"
+                                    class="content-center rounded-md bg-emerald-600 hover:bg-emerald-700 border-emerald-600 hover:border-emerald-700 text-white h-10 w-32">Post
+                                    Now</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
