@@ -4,18 +4,18 @@ import { CommonModule } from '@angular/common';
 import { RecruiterRoutingModule } from './recruiter-routing.module';
 import { RecruiterComponent } from './recruiter.component';
 import { PostJobComponent } from './Components/post-job/post-job.component';
-import { JobDetailsComponent } from './Components/job-details/job-details.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
     RecruiterComponent,
     PostJobComponent,
-    JobDetailsComponent
   ],
   imports: [
     CommonModule,
-    RecruiterRoutingModule
+    RecruiterRoutingModule,
+    ReactiveFormsModule,
   ]
 })
 export class RecruiterModule { }

@@ -1,10 +1,13 @@
 export interface JobModel{
+    id:number
+    userId:string
     jobTitle:string;
     jobDescription:string;
 
     jobCategory:string;
 
     jobType:string;
+    jobPostDate:Date;
 
     salaryType:string;
 

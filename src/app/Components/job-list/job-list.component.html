@@ -1,0 +1,35 @@
+<section class="relative  w-full h-screen ">
+   
+
+    <div *ngFor="let item of jobListData" class="container mt-32 mx-auto ">
+        <div class="grid grid-cols-1 gap-[30px]">
+            <div class="group relative overflow-hidden md:flex justify-between items-center rounded shadow hover:shadow-md dark:shadow-gray-700 transition-all duration-500 p-5">
+                <div class="flex items-center">
+                    
+                    <a  class="text-lg hover:text-emerald-600 font-semibold transition-all duration-500 ms-3 min-w-[180px]">{{item.jobCategory}}</a>
+                </div>
+
+                <div class="md:block flex justify-between md:mt-0 mt-4">
+                    <span class="block"><span class="bg-emerald-600/10 inline-block text-emerald-600 text-xs px-2.5 py-0.5 font-semibold rounded-full">{{item.jobType}}</span></span>
+                    <span class="block text-slate-400 text-sm md:mt-1 mt-0"><i class="uil uil-clock"></i> {{item.jobPostDate|date}}</span>
+                </div>
+
+                <div class="md:block flex justify-between md:mt-0 mt-2">
+                    <span class="text-slate-400"><i class="uil uil-map-marker"></i> {{item.country}} - {{item.state}}</span>
+                    <span class="block font-semibold md:mt-1 mt-0">{{item.minSalary|currency:"INR"}} - {{item.maxSalary|currency:"INR"}}</span>
+                </div>
+
+                <div class="md:mt-0 mt-4">
+                    <button (click)="openDetails(item.id)" class=" rounded-md bg-emerald-600 hover:bg-emerald-700 border-emerald-600 hover:border-emerald-700 text-white md:ms-2 w-32 h-12 ">Job Details</button>
+                </div>
+
+                <span class="w-24 bg-yellow-400 text-white text-center absolute ltr:-rotate-45 rtl:rotate-45 -start-[30px] top-1"><i class="uil uil-star"></i></span>
+            </div><!--end content-->
+            
+          
+        </div><!--end grid-->
+
+    </div><!--end container-->
+
+   
+</section>
